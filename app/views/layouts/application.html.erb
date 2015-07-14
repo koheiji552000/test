@@ -3,6 +3,9 @@
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 <meta charset="UTF-8">
 <head>
+  
+  <%= stylesheet_link_tag "bootstrap", media: "all", "data-turbolinks-track" => true %>
+  
   <meta name="viewport" content="width=device-width">
   <title>Dive into Code</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -11,6 +14,9 @@
 </head>
 <body>
 
+<p class="notice"><%= notice %></p> 
+<p class="alert"><%= alert %></p>
+  
 <%= yield %>
 
 </body>
